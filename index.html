@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<title>Linear Regression</title>
+
+	<style>
+		html {
+			background-image: url("https://i.pinimg.com/originals/73/aa/51/73aa519b61a5299f43129cb5cac3ffa8.jpg");
+		}
+
+		h1, h3, p {
+			text-align: center;
+			font-family: 'Roboto Mono', monospace;
+			color: white;
+		}
+
+		canvas { 
+			position: absolute; 
+			width: 600px; 
+			height: 400px; 
+			left: 50%; 
+			top: 50%; 
+			margin-left: -300px; /* This is half the width */ 
+			margin-top: -100px; /* This is half the height */ 
+		} 
+	</style>
+</head>
+
+<body>
+	<h1><a href = "https://en.wikipedia.org/wiki/Linear_regression">Linear Regression</a> Grapher</h1>
+	<h3>Click the graph to add data points. The program will automatically plot the <a href = "https://en.wikipedia.org/wiki/Line_fitting">line of best fit.</a></h3>
+	<h3>(600x600px Canvas)</h3>
+	<p>Slope:</p>
+	<p id = "slope">NaN</p>
+	<p>Y-Intercept:</p>
+	<p id = "yint">NaN</p>
+
+	<script src="linearregression.js"></script>
+</body>
+</html>
